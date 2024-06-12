@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 50px 50px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #34114b;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Logo{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.error-message {
+    text-align: center;
+    font-size: medium;
+    display: none;
+    position: fixed;
+    top: 85%;
+    left: 85%;
+    padding: 20px 40px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: #34114b;
+}
+
+.Username, .Password {
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 40px;
+    height: 70px;
+    background-color: #34114b;
+    color:white;
+    width: 100%;
+    max-width: 500px;
+}
+.Username::placeholder, .Password::placeholder {
+    color: white;
+}
+
+.box-buttons {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.Cancel{
+    margin-top: 10%;
+}
+
+.Login{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 3% 5%;
+    background-color: #34114b;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Cancel{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    height: 60px;
+    width: 200px;
+    background-color: #34114b;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Login:hover, .Cancel:hover {
+    background-color: white;
+    color: #34114b;
+    border: 2px solid #34114b;
+}
+
+.box{
+    padding-bottom: 10px;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    align-items: center;
+    background-image: url("../directory/Images/Login.png");
+    background-size: cover;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* REFERENCES */
+
+@media screen and (max-width: 625px) {
+    .Username, .Password, .box-buttons {
+        width: 100%;
+        max-width: 300px;
+    }
+    .Login, .Register, .Cancel {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+    .box-buttons {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .Login, .Register {
+        margin-bottom: 10px;
+    }
+    .Username{
+        margin-bottom: -50px;
+    }
+
+    .Logo{
+        margin-bottom: 0px !important;
+    }
+}

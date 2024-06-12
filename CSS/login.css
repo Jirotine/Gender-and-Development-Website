@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+@media (min-width: 0px) { 
+    .myCon {display: none;}
+}
+
+@media (min-width: 576px) { 
+    .myCon {display: none;}
+}
+
+@media (max-width: 576px) { 
+    .myCol {display: none;}
+}
+
+@media (min-width: 768px) { 
+    .myCon {display: block;}
+    .Logo {display: none;}
+}
+
+@media (min-width: 992px) { 
+    .myCon {display: block;}
+    .myCol {display: none;}
+    .Logo {display: none;}
+}
+
+@media (min-width: 1200px) { 
+    .myCon {display: block;}
+    .Logo {display: none;}
+}
+
+@media (min-width: 1400px) { 
+    .myCon {display: block;}
+    .Logo {display: none;}
+}
+
+.btn{
+    background-color: #34114b;
+    color: white;
+    border: 2px solid #34114b;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        animation-timing-function: ease;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+.error-message {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    display: none;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: #34114b;
+}
+
+.container{
+    background-color: #491c68;
+    box-shadow: 0 0 4px 4px gray;
+}
+
